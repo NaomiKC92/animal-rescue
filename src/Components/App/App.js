@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import {fetchAnimalData} from '../../apiCalls'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>ANIMAL RESCUE</h1>
-    </div>
-  );
+export class App extends Component {
+  constructor() {
+    super();
+  
+  }
+
+  componentDidMount() {
+    fetchAnimalData();
+  }
+
+  render() {
+    return (
+      <>
+      </>
+    )
+  }
+
+
 }
 
-export default App;
+export default App
+
