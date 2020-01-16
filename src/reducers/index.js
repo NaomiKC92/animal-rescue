@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux';
 import { hasErroredReducer } from './hasErroredReducer';
 import { isLoadingReducer } from './isLoadingReducer';
-import { showAnimalsReducer } from './showAnimalsReducer'
+import { animals } from './AnimalsReducer'
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   hasErroredReducer,
   isLoadingReducer,
-  showAnimalsReducer
+  animals
 });
 
 export default rootReducer;
+
