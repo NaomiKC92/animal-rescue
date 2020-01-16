@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
-import { hasErroredReducer } from './hasErroredReducer';
-import { isLoadingReducer } from './isLoadingReducer';
+import { hasErrored } from './hasErroredReducer';
+import { isLoading } from './isLoadingReducer';
 import { animals } from './AnimalsReducer'
+import {donations} from './DonationReducer'
 
 export const rootReducer = combineReducers({
-  hasErroredReducer,
-  isLoadingReducer,
-  animals
+  hasErrored,
+  isLoading,
+  animals,
+  donations
 });
 
 export default rootReducer;
